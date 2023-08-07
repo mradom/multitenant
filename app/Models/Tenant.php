@@ -25,7 +25,7 @@ class Tenant extends BaseTenant
         $database = Str::of($database_name)->replace('.', '_')->lower()->__toString();
 
         $query = "SELECT SCHEMA_NAME FROM INFORMATION_SCHEMA.SCHEMATA WHERE SCHEMA_NAME = ?";
-        $db = DB::connection('tenant')select($query, [$database]);
+        $db = DB::connection('tenant')->select($query, [$database]);
         if (empty($db)) {
             DB::connection('tenant')->statement("CREATE DATABASE {$database};");
             $tenant->database = $database;
