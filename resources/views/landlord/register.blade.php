@@ -16,7 +16,7 @@
         <input type="text" class="form-control" name="name" placeholder="Name">
       </div>
       <div class="form-group my-3">
-        <input type="text" class="form-control" name="domain" placeholder="Domain">
+        <input type="text" class="form-control" name="domain" placeholder="{domain}.tenant.codigitar.com">
       </div>
       <div class="form-group">
         <button class="btn btn-primary btn-block" type="submit">Crear</button>
