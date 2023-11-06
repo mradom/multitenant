@@ -25,14 +25,14 @@
                     <form method="POST" action="{{route('posts.store')}}">
                         @csrf
                         <div class="form-group">
-                            <label for="title">Título</label>
+                            <label for="title">Title</label>
                             <input type="text" class="form-control" id="title" name="title" maxlength="255" required="required">
                         </div>
                         <div class="form-group">
                             <label for="content">Message</label>
                             <textarea class="form-control" rows="2" id="content" name="content"></textarea>
                         </div>
-                        <button class="btn btn-dark btn-block" type="submit">Enviar</button>
+                        <button class="btn btn-dark btn-block" type="submit">Save!</button>
                     </form>
                 </div>
             </div>
